@@ -1,5 +1,15 @@
 import java.util.Arrays;
+import java.util.Scanner;
 class Intro {
+    public static int[] createArray(int n) {
+        int[] arr = new int[n];
+
+        Scanner sc = new Scanner(System.in);
+        for(int i=0;i<n;i++){
+            arr[i] = sc.nextInt();
+        }
+        return arr;
+    }
     public static void main(String[] args) {
         int[] arr = {10,20,30,40,50};
         System.out.println(arr.length);
@@ -24,7 +34,14 @@ class Intro {
         
         // Print array1
         System.out.println(Arrays.toString(arr));
+
+        int first[] = createArray(5);
+        System.out.println(Arrays.toString(first));
+
+
         
+
+
 
 
 
