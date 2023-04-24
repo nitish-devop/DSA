@@ -19,5 +19,8 @@ public class Intro {
 
         int clear2Bit = 15 & ~(1<<2);
         System.out.println(clear2Bit);
+
+        // Print binary of a number 
+        System.out.println(Integer.toBinaryString(16 & (-16)));
     }
 }
